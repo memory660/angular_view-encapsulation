@@ -1,0 +1,20 @@
+<p>encapsulation: ViewEncapsulation.ShadowDom,</p>
+
+<p>
+  donc le style appliqué ici sera appliqué au niveau de l'ombre. niveau
+  shadowDom
+</p>
+
+<p>
+  Angular utilise le shadow DOM du navigateur pour enfermer la vue du composant
+  dans un ShadowRoot (utilisé comme élément hôte du composant) et appliquer les
+  styles fournis au niveau de la racine du shadow DOM, de sorte que les styles
+  appliqués seront applicables à ce composant et à ses composants enfants. Le
+  navigateur garde le Shadow DOM séparé du DOM principal. Le rendu du Shadow dom
+  et du DOM principal se fait séparément. Le navigateur les aplatit ensemble
+  avant de les afficher à l'utilisateur.
+</p>
+
+<br />composant enfant :<br />
+
+<app-shadowdom-encapsulation-child></app-shadowdom-encapsulation-child>
